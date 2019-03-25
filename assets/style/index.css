@@ -1,6 +1,8 @@
 * {
   margin: 0;
   padding: 0;
+  -webkit-transform: translateZ(0);
+  -webkit-overflow-scrolling: touch;
 }
 
 img {
@@ -11,7 +13,7 @@ img {
 body, html {
   position: relative;
   height: 100%;
-  font: 12px/30px Georgia, serif;
+  font: 12px/30px "Microsoft Yahei", "\5FAE\8F6F\96C5\9ED1", Gergia, serif;
   overflow: hidden;
 }
 
@@ -45,6 +47,7 @@ body, html {
 .popup p {
   font-size: 0.3rem;
   line-height: 0.4rem;
+  text-indent: 2em;
 }
 
 .popup .text-center {
@@ -55,6 +58,15 @@ body, html {
   padding-top: 0.6rem;
 }
 
+.popup em {
+  text-indent: 2em;
+}
+
+.popup b {
+  font-size: 0.3rem;
+  line-height: 0.4rem;
+}
+
 .back {
   position: absolute;
   right: 0.15rem;
@@ -63,6 +75,10 @@ body, html {
   background: #eeeeee;
   color: #888888;
   border-radius: 0.05rem;
+  font-size: 0.3rem;
+  z-index: 10;
+  height: 0.3rem;
+  line-height: 0.3rem;
 }
 
 .popup.active {

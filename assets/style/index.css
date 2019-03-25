@@ -40,6 +40,10 @@ body, html {
   margin-bottom: 0.15rem;
 }
 
+.popup p {
+  font-size: 22px;
+}
+
 .popup.active {
   -webkit-transform: translateY(0);
           transform: translateY(0);

@@ -89,7 +89,7 @@ var arr = [
     },
     {
         title:'<h2 class="text-center" style="text-align: center">储罐区</h2>',
-        content:'<p>这是我司空压制氮房，有一备一用两套装置，是为我厂区提供气源及惰性气体，可以同时产生压缩空气和惰性气体，所有自动化控制的阀门都是通过我们的压缩空气来提供动力；惰性气体主要保证油墨的品质和安全操作。</p>'
+        content:'<p >这是我司空压制氮房，有一备一用两套装置，是为我厂区提供气源及惰性气体，可以同时产生压缩空气和惰性气体，所有自动化控制的阀门都是通过我们的压缩空气来提供动力；惰性气体主要保证油墨的品质和安全操作。</p>'
     },
     {
         title:'<h2 class="text-center" style="text-align: center">4楼水性涂层车间***</h2>',
@@ -151,8 +151,10 @@ var arr = [
             '阀、启动供墨按钮即可实施供墨</p>'
     }
 ]
+
 $('.mapClick').off('click').on('click',function () {
-    $('.popup').addClass('active').html(arr[$(this).data('index') - 1].title+arr[$(this).data('index') - 1].content);
+    var $that = $(this);
+    $('.popup').css('fontSize','0.22rem').html(arr[$that.data('index') - 1].title+arr[$that.data('index') - 1].content).addClass('active')
 })
 $('.popup').on('click',function () {
     $(this).toggleClass('active');

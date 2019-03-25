@@ -84,12 +84,12 @@ var arr = [
             '<p>智能化：可视化监控系统开发，针对不同设备的数据进行实时监控展示。</p>'
     },
     {
-        title:'<h2 class="text-center" style="text-align: center">空压制氮机房、储罐区</h2>',
-        content:'<p>这是我司空压制氮房，有一备一用两套装置，是为我厂区提供气源及惰性气体，可以同时产生压缩空气和惰性气体，所有自动化控制的阀门都是通过我们的压缩空气来提供动力；惰性气体主要保证油墨的品质和安全操作。</p><p>储罐区内有 12 个 50 立方的储罐，能存储各类化工原料和成品，阀门和泵组都是通过自动化控制系统实现远程操作，包括罐体的液位体积、压力、温度都是由中央控制室集中监管。</p>'
+        title:'<h2 class="text-center" style="text-align: center">空压制氮机房</h2>',
+        content:'<p>这是我司空压制氮房，有一备一用两套装置，是为我厂区提供气源及惰性气体，可以同时产生压缩空气和惰性气体，所有自动化控制的阀门都是通过我们的压缩空气来提供动力；惰性气体主要保证油墨的品质和安全操作。</p>'
     },
     {
         title:'<h2 class="text-center" style="text-align: center">储罐区</h2>',
-        content:'<p >这是我司空压制氮房，有一备一用两套装置，是为我厂区提供气源及惰性气体，可以同时产生压缩空气和惰性气体，所有自动化控制的阀门都是通过我们的压缩空气来提供动力；惰性气体主要保证油墨的品质和安全操作。</p>'
+        content:'<p >储罐区内有 12 个 50 立方的储罐，能存储各类化工原料和成品，阀门和泵组都是通过自动化控制系统实现远程操作，包括罐体的液位体积、压力、温度都是由中央控制室集中监管。</p>'
     },
     {
         title:'<h2 class="text-center" style="text-align: center">4楼水性涂层车间***</h2>',
@@ -154,7 +154,8 @@ var arr = [
 
 $('.mapClick').off('click').on('click',function () {
     var $that = $(this);
-    $('.popup').css('fontSize','0.22rem').html(arr[$that.data('index') - 1].title+arr[$that.data('index') - 1].content).addClass('active')
+    $('.popup').css('fontSize','0.22rem').addClass('active');
+    $('.popup .content').html(arr[$that.data('index') - 1].title+arr[$that.data('index') - 1].content);
 })
 $('.popup').on('click',function () {
     $(this).toggleClass('active');

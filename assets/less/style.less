@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+body, html {
+  position: relative;
+  height: 100%;
+}
+
+.map {
+  width: 100%;
+  height: 100%;
+  background: url('../img/1.jpg') no-repeat;
+  -webkit-background-size: 100% auto;
+  background-size: 100% auto;
+}
+
+.popup {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  transform: translateY(100%);
+  transition: all ease 0.3s;
+  background: #ffffff;
+  font-size: 22px; /*no*/
+  overflow: auto;
+  padding: 20px;
+  h2{
+    margin-bottom: 15px;
+  }
+}
+
+.popup.active {
+  transform: translateY(0);
+}
+
+.mapClick {
+  position: absolute;
+}
+
+.mapClick1 {
+  left: 41px;
+  top: 107px;
+}
+
+.mapClick2 {
+  left: 186px;
+  top: 107px;
+}
+
+.mapClick3 {
+  left: 329px;
+  top: 107px;
+}
+
+.mapClick4 {
+  left: 473px;
+  top: 107px;
+}
+
+.mapClick5 {
+  left: 621px;
+  top: 107px;
+}
+
+.mapClick10 {
+  left: 41px;
+  top: 242px;
+}
+
+.mapClick9 {
+  left: 186px;
+  top: 242px;
+}
+
+.mapClick8 {
+  left: 329px;
+  top: 242px;
+}
+
+.mapClick7 {
+  left: 473px;
+  top: 242px;
+}
+
+.mapClick6 {
+  left: 621px;
+  top: 242px;
+}
+
+.mapClick11 {
+  left: 41px;
+  top: 388px;
+}
+
+.mapClick12 {
+  left: 157px;
+  top: 388px;
+}
+
+.mapClick13 {
+  left: 274px;
+  top: 388px;
+}
+
+.mapClick14 {
+  left: 391px;
+  top: 388px;
+}
+
+.mapClick15 {
+  left: 507px;
+  top: 388px;
+}
+
+.mapClick16 {
+  left: 622px;
+  top: 388px;
+}
+
+.radio-box {
+  width: 84px;
+  height: 84px;
+  transform: scale(0);
+  border-radius: 100%;
+  opacity: 0;
+  transition: all 0.1s ease;
+}
+
+.mapClick:active {
+  .radio-box {
+    background: #fff;
+    opacity: 0.5;
+    transform: scale(1);
+  }
+}
+
+.text-center {
+  text-align: center;
+}

@@ -1,0 +1,50 @@
+{
+  "name": "aa",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "dependencies": {
+    
+    "autoprefixer": "7.1.2",
+    
+    
+    "codemirror": "5.25.2",
+    "css-loader": "0.25.0",
+
+    "extract-text-webpack-plugin": "1.0.1",
+    "file-loader": "0.10.1",
+
+    "jquery": "^1.11.2",
+    
+    "knockout": "3.4.2",
+    "knockout.mapping": "2.4.3",
+    "laydate": "1.0.7",
+    "laz": "0.0.2",
+    "less": "2.3.1",
+    "less-loader": "2.2.3",
+    "oclazyload": "^1.1.0",
+    "postcss": "6.0.7",
+    "postcss-loader": "2.0.6",
+    "postcss-smart-import": "0.7.5",
+    "precss": "2.0.0",
+    "px2rem-loader": "^0.1.7",
+    "select2": "4.0.3",
+    "style-loader": "0.13.1",
+
+    "webpack": "1.13.2",
+    "webpack-dev-server": "1.15.1",
+    "webpack-spritesmith": "0.3.3",
+
+    "yargs": "7.0.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm run lite",
+    "lite": "lite-server"
+  },
+  "author": "macauex",
+  "license": "ISC",
+  "devDependencies": {
+    "lite-server": "^2.3.0"
+  }
+}

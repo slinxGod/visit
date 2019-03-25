@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+body, html {
+  position: relative;
+  height: 100%;
+}
+
+.map {
+  width: 100%;
+  height: 100%;
+  background: url(f49353ed496dd6c354b8013c525a7893.jpg) no-repeat;
+  background-size: 100% auto;
+}
+
+.popup {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+  -webkit-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+  background: #ffffff;
+  font-size: 22px;
+  overflow: auto;
+  padding: 0.2rem;
+}
+
+.popup h2 {
+  margin-bottom: 0.15rem;
+}
+
+.popup.active {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.mapClick {
+  position: absolute;
+}
+
+.mapClick1 {
+  left: 0.41rem;
+  top: 1.07rem;
+}
+
+.mapClick2 {
+  left: 1.86rem;
+  top: 1.07rem;
+}
+
+.mapClick3 {
+  left: 3.29rem;
+  top: 1.07rem;
+}
+
+.mapClick4 {
+  left: 4.73rem;
+  top: 1.07rem;
+}
+
+.mapClick5 {
+  left: 6.21rem;
+  top: 1.07rem;
+}
+
+.mapClick10 {
+  left: 0.41rem;
+  top: 2.42rem;
+}
+
+.mapClick9 {
+  left: 1.86rem;
+  top: 2.42rem;
+}
+
+.mapClick8 {
+  left: 3.29rem;
+  top: 2.42rem;
+}
+
+.mapClick7 {
+  left: 4.73rem;
+  top: 2.42rem;
+}
+
+.mapClick6 {
+  left: 6.21rem;
+  top: 2.42rem;
+}
+
+.mapClick11 {
+  left: 0.41rem;
+  top: 3.88rem;
+}
+
+.mapClick12 {
+  left: 1.57rem;
+  top: 3.88rem;
+}
+
+.mapClick13 {
+  left: 2.74rem;
+  top: 3.88rem;
+}
+
+.mapClick14 {
+  left: 3.91rem;
+  top: 3.88rem;
+}
+
+.mapClick15 {
+  left: 5.07rem;
+  top: 3.88rem;
+}
+
+.mapClick16 {
+  left: 6.22rem;
+  top: 3.88rem;
+}
+
+.radio-box {
+  width: 0.84rem;
+  height: 0.84rem;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  border-radius: 100%;
+  opacity: 0;
+  -webkit-transition: all 0.1s ease;
+  transition: all 0.1s ease;
+}
+
+.mapClick:active .radio-box {
+  background: #fff;
+  opacity: 0.5;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.text-center {
+  text-align: center;
+}
+/*# sourceMappingURL=index.css.map*/

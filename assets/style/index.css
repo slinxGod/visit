@@ -20,7 +20,7 @@ body, html {
 .map {
   width: 100%;
   height: 100%;
-  background: url(f49353ed496dd6c354b8013c525a7893.jpg) no-repeat;
+  background: url(97322f28ee73ce590d52f5f1953e7954.jpg) no-repeat;
   background-size: 100% auto;
 }
 
@@ -41,12 +41,12 @@ body, html {
 }
 
 .popup h2 {
-  margin-bottom: 0.15rem;
+  margin-bottom: 0.4rem;
 }
 
 .popup p {
   font-size: 0.3rem;
-  line-height: 0.4rem;
+  line-height: 0.6rem;
   text-indent: 2em;
 }
 
